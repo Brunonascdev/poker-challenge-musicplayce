@@ -15,7 +15,7 @@ import Card from '../Card';
 import texasHoldemImage from '../../assets/images/holdem.png';
 
 import { getCards } from '../../utils/getCards';
-import { aleatoryNumber } from '../../utils/aleatoryNumber';
+import { generateAleatory } from '../../utils/generateAleatory';
 
 function Main() {
   const [firstHand, setFirstHand] = useState([]);
@@ -25,31 +25,15 @@ function Main() {
 
   const startGame = () => {
     const loadFirstHand = () => {
-      const cards = [];
+      const aleatoryGenerated = generateAleatory(deck).splice(0, 5);
 
-      for (let i = 0; i < 5; i++) {
-        const generatedAleatoryNumber = aleatoryNumber(0, deck.length - 1);
-
-        console.log(generatedAleatoryNumber);
-
-        if (cards.findIndex((el) => el === cards[generatedAleatoryNumber])) {
-          cards.push(deck[generatedAleatoryNumber]);
-        } else {
-          cards.push(deck[aleatoryNumber(0, deck.length - 1)]);
-        }
-      }
-
-      setFirstHand(cards);
+      setFirstHand(aleatoryGenerated);
     };
 
     const loadSecondHand = () => {
-      const cards = [];
+      const aleatoryGenerated = generateAleatory(deck).splice(0, 5);
 
-      for (let i = 0; i < 5; i++) {
-        cards.push(deck[aleatoryNumber(0, deck.length - 1)]);
-      }
-
-      setSecondHand(cards);
+      setSecondHand(aleatoryGenerated);
     };
 
     loadFirstHand();
