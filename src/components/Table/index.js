@@ -1,9 +1,16 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, BackgroundLogo } from './styles';
+
+import texasHoldemImage from '../../assets/images/holdem.png';
 
 function Table({ children }) {
-  return <Container>{children}</Container>;
+  return (
+    <Container>
+      <BackgroundLogo src={texasHoldemImage} />
+      {children}
+    </Container>
+  );
 }
 
 export default Table;

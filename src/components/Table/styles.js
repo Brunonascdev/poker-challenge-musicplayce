@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   background-color: #0b8200;
@@ -12,8 +12,23 @@ export const Container = styled.div`
   border-radius: 10px;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 
   box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
+`;
+
+export const BackgroundLogo = styled.img`
+  position: absolute;
+  opacity: 0.2;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 15%;
+
+  ${css`
+    filter: grayscale(100%);
+  `}
 `;
