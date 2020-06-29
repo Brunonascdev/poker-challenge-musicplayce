@@ -18,6 +18,8 @@
 
 Se divirta nessa pequena demonstração de Texas Hold'em.
 
+[Preview da Aplicação](https://objective-kowalevski-144072.netlify.app/)
+
 ## Tecnologias
 
 ### Web
