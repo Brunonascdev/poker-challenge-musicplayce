@@ -17,7 +17,7 @@ export const ModalDiv = styled.div`
   }
 
   button {
-    margin: 15px 0;
+    margin-top: 15%;
   }
 `;
 

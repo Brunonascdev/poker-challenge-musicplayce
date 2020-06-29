@@ -30,6 +30,7 @@ function Main() {
   const [loading, setLoading] = useState(false);
   const [winner, setWinner] = useState('');
   const [message, setMessage] = useState('');
+  const [typeOfHand, setTypeOfHand] = useState('');
 
   const deck = getCards();
 
@@ -56,6 +57,7 @@ function Main() {
         setLoading(true);
         setWinner('Oponente');
         setMessage('Você perdeu! tente novamente.');
+        setTypeOfHand(opponentHand.name);
         await timeoutForModal();
         await showModal();
         setLoading(false);
@@ -65,6 +67,7 @@ function Main() {
         setLoading(true);
         setWinner('Você');
         setMessage('Você ganhou! Parabéns!');
+        setTypeOfHand(yourHand.name);
         await timeoutForModal();
         await showModal();
         setLoading(false);
@@ -74,6 +77,7 @@ function Main() {
         setLoading(true);
         setWinner('Empate');
         setMessage('Houve um empate! tente novamente.');
+        setTypeOfHand('');
         await timeoutForModal();
         await showModal();
         setLoading(false);
@@ -111,6 +115,7 @@ function Main() {
           {winner && message && (
             <>
               <h1>{winner === 'Empate' ? 'Empate!' : `Vencedor: ${winner}`}</h1>
+              <h2>{typeOfHand ? `Tipo de mão: ${typeOfHand}` : ''}</h2>
               <h2>{message}</h2>
               <Button
                 type="button"
@@ -129,7 +134,7 @@ function Main() {
       <Table>
         <FirstHand>
           {firstHand.map((card) => (
-            <Card cardType="BLUE_BACK" key={card} />
+            <Card cardType={card} key={card} />
           ))}
         </FirstHand>
 

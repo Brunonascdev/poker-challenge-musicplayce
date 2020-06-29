@@ -16,6 +16,22 @@ export const Container = styled.div`
   flex-direction: column;
 
   box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
+
+  p {
+    position: absolute;
+    margin: 2%;
+    font-size: 0.8em;
+
+    a {
+      color: #000;
+      text-decoration: none;
+      transition: font-size 0.2s;
+
+      &:hover {
+        font-size: 1.1em;
+      }
+    }
+  }
 `;
 
 export const BackgroundLogo = styled.img`
