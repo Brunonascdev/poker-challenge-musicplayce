@@ -1,68 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center"><img src="https://i.ibb.co/vc6pVmz/holdem.png" /></h1>
+<h2 align="center">Texas Hold'em - MusicPlayce</h2>
 
-## Available Scripts
+<h1 align="center">
 
-In the project directory, you can run:
+![GitHub Starts](https://img.shields.io/github/stars/Brunonascdev/poker-challenge-musicplayce?color=940000&style=for-the-badge)
+![GitHub Languages](https://img.shields.io/github/languages/count/Brunonascdev/poker-challenge-musicplayce?color=940000&style=for-the-badge)
+![GitHub Top Language](https://img.shields.io/github/languages/top/Brunonascdev/poker-challenge-musicplayce?color=940000&style=for-the-badge)
+![GitHub Size](https://img.shields.io/github/repo-size/Brunonascdev/poker-challenge-musicplayce?color=940000&style=for-the-badge)
+![GitHub Forks](https://img.shields.io/github/forks/Brunonascdev/poker-challenge-musicplayce?color=940000&style=for-the-badge)
 
-### `yarn start`
+</h1>
+<hr>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![App Preview](https://i.ibb.co/fn2WzgK/localhost-3000-1.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Texas Hold'em ♠️
 
-### `yarn test`
+Se divirta nessa pequena demonstração de Texas Hold'em.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias
 
-### `yarn build`
+### Web
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+• [ReactJS](https://pt-br.reactjs.org/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+-- Dependências --
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+• [styled-components](https://styled-components.com/)
 
-### `yarn eject`
+• [pokersolver](https://github.com/goldfire/pokersolver)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+• [rodal](https://github.com/chenjiahan/rodal)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Começando :heavy_check_mark:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Essas instruções fornecerão uma cópia do projeto em execução na sua máquina local.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Pré-requisitos :pencil:
 
-## Learn More
+• [Node](https://nodejs.org/en/);
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Instalando :inbox_tray:
+Siga passo a passo as seguinte formas de obter o código na sua máquina local.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**1. Clonando o repositório**.
 
-### Code Splitting
+Inicie o repositorio na sua máquina local utilizando as linhas de comando.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Clonar com SSH
+```
+mkdir texas-holdem
+cd texas-holdem
+git init
+git clone git@github.com:Brunonascdev/poker-challenge-musicplayce
+```
+Clonar com HTTPS 
+```
+mkdir texas-holdem
+cd texas-holdem
+git init
+git clone https://github.com/Brunonascdev/poker-challenge-musicplayce
+```
+Agora os arquivos que estão no repositório remoto estão clonados no repositório local.
 
-### Analyzing the Bundle Size
+**2. Baixando o repositório**.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Você também pode [baixar](https://github.com/Brunonascdev/poker-challenge-musicplayce/archive/master.zip) o repositório em formato zip.
 
-### Making a Progressive Web App
+**3. Instalado as dependências**.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Entre na pasta do projeto 
+```
+cd poker-challenge-musicplayce
+```
+Para instalar as dependências e executar o Projeto
+``` 
+npm install // ou yarn
+npx start // ou yarn start
+```
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<hr />
+<h6 align="center"> Made with ❤️ by @brunonascdev</h6>
