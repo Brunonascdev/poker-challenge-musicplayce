@@ -12,7 +12,7 @@
 </h1>
 <hr>
 
-![App Preview](https://i.ibb.co/y6yzj8g/localhost-3000.png)
+![App Preview](https://i.ibb.co/fn2WzgK/localhost-3000-1.png)
 
 ## Texas Hold'em ♠️
 
