@@ -8,6 +8,19 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
+export const ModalDiv = styled.div`
+  padding: 15px;
+  text-align: center;
+
+  h2 {
+    font-weight: 400;
+  }
+
+  button {
+    margin: 15px 0;
+  }
+`;
+
 export const StyledImage = styled.img`
   margin: 30px auto;
   width: 20%;
@@ -31,18 +44,24 @@ export const AlignButtons = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  button {
-    padding: 15px;
-    border: 0;
-    color: white;
-    font-size: 1.2em;
-    border-radius: 8px;
-    background-color: #00610f;
-    background-image: url('https://www.transparenttextures.com/patterns/p6.png');
-  }
 `;
 
 export const Deck = styled.div`
   margin: 0 30px;
+`;
+
+export const Button = styled.button`
+  padding: 15px;
+  border: 0;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 8px;
+  background-color: #00610f;
+  background-image: url('https://www.transparenttextures.com/patterns/p6.png');
+
+  &:disabled {
+    background-color: #ccc;
+    background-image: none;
+    color: #222;
+  }
 `;

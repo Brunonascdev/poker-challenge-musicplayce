@@ -21,12 +21,12 @@ export const Container = styled.div`
 export const BackgroundLogo = styled.img`
   position: absolute;
   opacity: 0.2;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
   width: 15%;
+  max-width: 150px;
 
   ${css`
     filter: grayscale(100%);
