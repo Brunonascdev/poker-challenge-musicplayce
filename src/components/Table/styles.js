@@ -48,3 +48,19 @@ export const BackgroundLogo = styled.img`
     filter: grayscale(100%);
   `}
 `;
+
+export const You = styled.span`
+  background: white;
+  padding: 15px;
+  width: 10%;
+  max-width: 100px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 0 0 50% 50%;
+  font-weight: bold;
+  font-size: 1em;
+`;
+
+export const Opponent = styled(You)`
+  border-radius: 50% 50% 0 0;
+`;
